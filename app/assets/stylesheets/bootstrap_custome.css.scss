@@ -1,10 +1,12 @@
 $body-bg                  : #ecf0f1;
 $navbar-height            : 45px;
 $navbar-default-bg        : #fff;
-$navbar-default-link-color: #c0392b;
+$navbar-default-link-color: #2980b9;
 $jumbotron-bg             : #fff;
-$btn-primary-bg           : #c0392b;
-
-
+$btn-primary-bg           : #2980b9;
+$panel-primary-heading-bg : #2980b9;
+$input-border-radius      : 1px;
+$input-border-focus       : #2980b9;
+$btn-border-radius-base  : 1px;
 @import "bootstrap-sprockets";
 @import "bootstrap";
