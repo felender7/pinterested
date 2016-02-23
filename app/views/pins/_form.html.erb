@@ -1,8 +1,7 @@
 <%=form_for @pin do |f|%>
  <div class="form-group">
      <%=f.label :Description %><br>
-     <%=f.text_field :description , class:"form-control"%><br>
-
+     <%=f.text_area :description,size: "5x4" ,class:"form-control" %><br>
      <%=f.submit class: "btn btn-primary"%>
  </div>
 <%end %>

@@ -1,3 +1,6 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+
+// custome boostrap scss style
 $body-bg                  : #ecf0f1;
 $navbar-height            : 45px;
 $navbar-default-bg        : #fff;
@@ -7,6 +10,17 @@ $btn-primary-bg           : #2980b9;
 $panel-primary-heading-bg : #2980b9;
 $input-border-radius      : 1px;
 $input-border-focus       : #2980b9;
-$btn-border-radius-base  : 1px;
+$btn-border-radius-base   : 1px;
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+// custome boostrap css style
+.btn-xs, .btn-group-xs > .btn {
+  padding: 1px 5px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 1px;
+}
