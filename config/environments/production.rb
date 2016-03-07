@@ -79,5 +79,4 @@ Rails.application.configure do
   #Devise configurations
   config.action_mailer.default_url_options = { host: 'pinterested-beans.herokuapp.com' }
   
-  CLOUDINARY_URL=cloudinary://628551373332451:lCqxprR69qzR6N0ygecRdZuFr18@dtonjl2fx
 end
