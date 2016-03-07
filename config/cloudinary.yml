@@ -11,7 +11,6 @@ production:
   api_secret: lCqxprR69qzR6N0ygecRdZuFr18
   enhance_image_tag: true
   static_image_support: true
-  Base delivery URL:	http://res.cloudinary.com/dtonjl2fx
 test:
   cloud_name: dtonjl2fx
   api_key: '628551373332451'
