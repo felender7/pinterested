@@ -1,8 +1,12 @@
 
 <%@pins.each do |pin| %>
+   <%=cl_image_tag pin.image.url(:medium)%>
    <p><%=pin.description%></p>
-   <%=link_to "Show", pin%> |
-   <%=link_to "Edit", edit_pin_path(pin)%> |
-   <%= link_to 'Destroy', pin, method: :delete, data: { confirm: 'Are you sure?' } %>
+
+   <%if user_signed_in?%>
+     <%= link_to "Show", pin%> |
+     <%= link_to "Edit", edit_pin_path(pin)%> |
+     <%= link_to 'Destroy', pin, method: :delete, data: { confirm: 'Are you sure?' } %>
+  <%end%>
    <hr>
 <%end %>

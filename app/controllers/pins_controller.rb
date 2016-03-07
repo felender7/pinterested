@@ -45,7 +45,7 @@ class PinsController < ApplicationController
             @pin = Pin.find(params[:id])
         end
         def pin_params
-            params.require(:pin).permit(:description)
+            params.require(:pin).permit(:description, :image)
         end
 end
     def correct_user # check if the user is authorised to edit,update or destroy the pin
