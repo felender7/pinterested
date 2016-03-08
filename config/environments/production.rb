@@ -78,5 +78,6 @@ Rails.application.configure do
 
   #Devise configurations
   config.action_mailer.default_url_options = { host: 'pinterested-beans.herokuapp.com' }
-  
+
+
 end
