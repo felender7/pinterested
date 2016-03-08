@@ -1,5 +1,5 @@
 
-<%=cl_image_tag @pin.image.url(:medium)%><br>
+<%=image_tag @pin.image.url(:medium)%><br>
 <%=@pin.description%><br>
 <hr>
 <%=link_to 'Edit',  edit_pin_path(@pin)%> |
