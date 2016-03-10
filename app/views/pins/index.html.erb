@@ -2,8 +2,7 @@
 <%@pins.each do |pin| %>
    <%=image_tag pin.image.url(:medium)%>
    <p><%=pin.description%></p>
-
-   <%if user_signed_in?%>
+   <%if pin.user == current_user%>
      <%= link_to "Show", pin%> |
      <%= link_to "Edit", edit_pin_path(pin)%> |
      <%= link_to 'Destroy', pin, method: :delete, data: { confirm: 'Are you sure?' } %>
