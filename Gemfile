@@ -5,7 +5,6 @@ gem 'rails', '4.1.8'
 gem 'bootstrap-sass', '~> 3.3.5'
 gem 'sass-rails', '~> 4.0.3'
 gem 'font-awesome-sass', '~> 4.5.0'
-#gem 'sass-rails', '>= 3.2'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
@@ -18,11 +17,13 @@ gem 'masonry-rails', '~> 0.2.4'
 gem 'jquery-turbolinks', '~> 2.1'
 gem 'will_paginate', '~> 3.1'
 gem 'will_paginate-bootstrap'
+gem 'rhc', '~> 1.38', '>= 1.38.4'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 
  group :production do
    gem 'pg'
+   gem 'puma', '2.11.1'
  end
  group :development do
    gem 'sqlite3'
