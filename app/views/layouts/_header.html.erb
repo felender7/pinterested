@@ -25,10 +25,9 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <%if user_signed_in?%>
+          <li class="avator round-image-50 "><%=image_tag(current_user.avatar.url(:thumb)) %></li>
           <li><%=link_to (current_user.name)%></li>
           <li><%=link_to 'Logout',  destroy_user_session_path, method: :delete %> </li>
-
-
         <%else%>
           <li><%= link_to(new_user_session_path) do %>
            <i class="fa fa-sign-in"></i> Login

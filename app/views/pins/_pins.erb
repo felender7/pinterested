@@ -17,8 +17,14 @@
                    </div>
                <%end%>
                <hr>
-              <small><%=pin.user.name if pin.user%></small>
+
+              <ul class="nav navbar-nav">
+                <li class="thumnail round-image-20 "><%=image_tag(pin.user.avatar.url(:thumb)) if pin.user %></li>
+                <li><small><%=pin.user.name if pin.user%></small></li>
+            </ul>
+
               <hr>
+              <br>
               <div class="like footer_icons "> <i class=" fa fa-heart"></i> ||
                      <span class="  fa fa-clock-o"></span> <%=time_ago_in_words(pin.created_at) +" ago" %>
               </div>
