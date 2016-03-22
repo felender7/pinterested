@@ -1,0 +1,131 @@
+/*Registration and Login Page v2
+------------------------------------*/
+
+
+.reg-block {
+	width: 380px;
+	padding: 20px;
+	margin: 60px auto;
+	background: #fff;
+	border-top: solid 2px #2980b9;
+  box-shadow: 0 0 3px #fff;
+}
+
+.reg-block h2,
+.reg-block p,
+.reg-block p a {
+	color: #777;
+}
+
+.reg-block-header h2 {
+	font-size: 28px;
+}
+
+.reg-block p a {
+	text-decoration: underline;
+}
+.reg-block p a:hover {
+	text-decoration: none;
+}
+
+/*Forms*/
+.reg-block .input-group-addon {
+	color: #bbb;
+	background: none;
+	min-width: 40px;
+}
+
+.reg-block .form-control:focus {
+   box-shadow: none;
+   border-color: #999;
+}
+
+.reg-block .checkbox {
+	color: #555;
+	margin-bottom: 20px;
+	font-weight: normal;
+}
+
+/*Reg Header*/
+.reg-block-header {
+	padding-bottom: 5px;
+	margin-bottom: 30px;
+	border-bottom: solid 1px #eee;
+}
+
+.reg-block-header h2 {
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.reg-block-header p {
+	text-align: center;
+}
+
+/*Reg Forms*/
+.reg-page label {
+	color: #777;
+}
+
+.reg-page .form-control {
+  box-shadow: none;
+  color:#3771AE;
+  border:1px solid #B3B3B3;
+  border-radius:0px !important;
+}
+
+.reg-page .form-control:focus {
+  border-color: #3771AE;
+  box-shadow: 0 0 2px #3771AE;
+}
+
+/*Form Spacing*/
+.form-spacing .form-control {
+  margin-bottom: 15px;
+}
+
+/*Form Icons*/
+.input-group-addon {
+  color: #b3b3b3;
+  font-size: 14px;
+  background: #fff;
+  border-radius:0px !important;
+}
+
+.btn-u.btn-block {
+    text-align: center;
+}
+.btn-u {
+    border: 0px none;
+    color: #FFF;
+    width:100%;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 400;
+    padding: 6px 13px;
+    position: relative;
+    background: #3771AE none repeat scroll 0% 0%;
+    white-space: nowrap;
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+/*For Mobile Devices*/
+@media (max-width: 500px) {
+	.reg-block {
+		width: 300px;
+		margin: 60px auto;
+	}
+}
+.social-icons {
+    margin-top: 5px;
+}
+.social-icons {
+    margin: 0;
+    padding: 0;
+}
+
+.color-blue {
+    color: #2980b9;
+}

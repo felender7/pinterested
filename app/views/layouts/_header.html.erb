@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -25,9 +25,7 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <%if user_signed_in?%>
-          <li><%=link_to (current_user.email)%>
-
-          </li>
+          <li><%=link_to (current_user.name)%></li>
           <li><%=link_to 'Logout',  destroy_user_session_path, method: :delete %> </li>
 
 

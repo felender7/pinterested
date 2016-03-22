@@ -1,6 +1,38 @@
 
-<%=image_tag @pin.image.url(:medium)%><br>
-<%=@pin.description%><br>
-<hr>
-<%=link_to 'Edit',  edit_pin_path(@pin)%> |
-<%=link_to 'Back',  pins_path%>
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+        <div class="panel panel-default ">
+            <div class="panel-body ">
+              <%=image_tag @pin.image.url(:medium), class:"img-responsive center-block "%></br>
+              <div class="center">
+              <%=@pin.description%><br>
+            </div>
+          </div>
+             <div class="panel-footer">
+                <%=link_to pins_path do%>
+                <i class="fa fa-arrow-circle-o-left"></i> Back
+                <%end%>
+                 <%if @pin.user == current_user%>
+                   |
+                  <%=link_to edit_pin_path(@pin) do %>
+                  <i class="fa fa-edit"> </i> Edit
+                  <%end%>
+                <%end%>
+              </div>
+          </div>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <%if @pin.user == current_user%>
+        <div class="panel panel-default">
+          <div class="panel-heading center"><i class="fa fa-list"></i> My Pins</div>
+        </div>
+          <%=render'pins'%>
+          <%end%>
+        </div>
+      </div>
+
+</div>
+</div>

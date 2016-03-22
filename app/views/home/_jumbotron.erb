@@ -1,0 +1,15 @@
+<%if user_signed_in?%>
+<%else%>
+<!-- Image Gradient -->
+  <div class="interactive-slider-v2">
+      <div class="container">
+          <h3>Welcome To The Pinterested App!</h3>
+          <p>Pinterest clone app!</p>
+          <br>
+          <%= link_to "Sign in", new_user_session_path , class:" btn-lg btn btn-default " %>
+          <%= link_to "Join", new_user_registration_path , class:"btn-lg btn btn-primary" %>
+
+      </div>
+  </div>
+  <!-- End Image Gradient -->
+<%end%>
