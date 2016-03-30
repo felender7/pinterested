@@ -12,18 +12,18 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'devise', '~> 3.5', '>= 3.5.6'
 gem 'paperclip', '~> 4.3', '>= 4.3.5'
-gem 'aws-sdk', '~> 2.2', '>= 2.2.24'
+#gem 'aws-sdk', '~> 2.2', '>= 2.2.24'
+gem 'dropbox', '~> 1.3'
+gem "paperclip-dropbox", ">= 1.1.7"
 gem 'masonry-rails', '~> 0.2.4'
 gem 'jquery-turbolinks', '~> 2.1'
 gem 'will_paginate', '~> 3.1'
 gem 'will_paginate-bootstrap'
-gem 'rhc', '~> 1.38', '>= 1.38.4'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 
  group :production do
    gem 'pg'
-   gem 'puma', '2.11.1'
  end
  group :development do
    gem 'sqlite3'

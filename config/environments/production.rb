@@ -79,12 +79,15 @@ Rails.application.configure do
   #Devise configurations
   config.action_mailer.default_url_options = { host: 'pinterested-beans.herokuapp.com' }
 
-  config.paperclip_defaults = {
-     :storage => :s3,
-     :s3_credentials => {
-     :bucket => ENV['S3_BUCKET_NAME'],
-     :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
-     :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
-   }
- }
+  #Include the file in the load path
+
+
+  #config.paperclip_defaults = {
+     #:storage => :s3,
+     #:s3_credentials => {
+     #:bucket => ENV['S3_BUCKET_NAME'],
+     #:access_key_id => ENV['AWS_ACCESS_KEY_ID'],
+    # :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
+   #}
+ #}
 end
