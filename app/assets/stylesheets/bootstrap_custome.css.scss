@@ -1,5 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700);
-
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+//@import url(https://fonts.googleapis.com/css?family=VT323);
 // custome boostrap scss style
 $font-family-sans-serif: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $body-bg                  : #ecf0f1;
@@ -20,7 +21,13 @@ $panel-border-radius      : 1px;
 @import "font-awesome";
 
 // custome boostrap css style
-
+.pixils-brand{
+    font-family: 'Press Start 2P', cursive;
+}
+.pixils-main {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 40px;
+}
 .btn-xs, .btn-group-xs > .btn{
   padding: 1px 5px;
   font-size: 12px;

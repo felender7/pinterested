@@ -14,6 +14,9 @@
   background-size: cover;
   background-position: center center;
   margin-top: -21px;
+  -webkit-animation: infiniteBackground 65s linear infinite;
+ -moz-animation: infiniteBackground 65s linear infinite;
+  animation: infiniteBackground 65s linear infinite;
 }
 
 
@@ -49,16 +52,169 @@
     margin-bottom: 20px;
   }
 }
+/*Interactive Slider v3 end
+------------------------------------*/
+
+/*Interactive Slider v3 
+------------------------------------*/
+
+.interactive-slider-v3 {
+  z-index: 1;
+  padding: 200px 0;
+  position: relative;
+  text-align: center;
+  background: url(1.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin-top: -21px;
+  -webkit-animation: infiniteBackground 65s linear infinite;
+ -moz-animation: infiniteBackground 65s linear infinite;
+  animation: infiniteBackground 65s linear infinite;
+}
 
 
+.interactive-slider-v3:after {
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  content: " ";
+  position: absolute;
+  background: rgba(0,0,0,0.4);
+}
+
+.interactive-slider-v3 h3 {
+  color: #fff;
+  font-size: 70px;
+  font-weight: 600;
+  line-height: 80px;
+  text-transform: capitalize;;
+}
+
+.interactive-slider-v3 p {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 200;
+}
+
+@media (max-width: 768px) {
+  .interactive-slider-v3 h3 {
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 20px;
+  }
+}
+/*Interactive Slider v3 end
+------------------------------------*/
+
+
+/*Page intro socials
+------------------------------------*/
+.page-intro .section-socials {
+	display: table;
+	margin: 60px auto 0;
+	position: relative;
+	left: 0;
+}
+.page-intro .section-social {
+	display: table-cell;
+	padding: 5px 25px;
+	vertical-align: top;
+}
+.page-intro .section-social:nth-child(2) {
+	border-left: 1px solid rgba(255,255,255,.7);
+}
+
+.page-intro .section-social-title {
+	margin-bottom: 12px;
+	color: #fff;
+}
+
+.page-intro .section-social-button {
+	text-align: center;
+}
+
+.page-intro .section-socials .twitter-follow-button {
+	color: #1b95e0;
+}
+
+.page-intro .cbp-l-grid-agency {
+	z-index: 0;
+}
+
+/*Page intro socials end
+------------------------------------*/
+
+
+/*Page intro Buttons
+------------------------------------*/
+
+/*Button Styles
+------------------------------------*/
+.btn-h {
+	box-shadow: none;
+	border-radius: 0;
+}
+.btn-h {
+	border: 0;
+	color: #fff;
+	font-size: 14px;
+	cursor: pointer;
+	font-weight: 400;
+	padding: 6px 13px;
+	position: relative;
+	white-space: nowrap;
+	display: inline-block;
+	text-decoration: none;
+}
+.btn-h:hover {
+	color: #fff;
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+}
+
+.btn-h.btn-brd {
+	color: #555;
+	background: none;
+	padding: 5px 13px;
+	border: solid 1px transparent;
+}
+.btn-h.btn-brd-width-2 {
+	padding: 7px 18px;
+	border-width: 2px;
+}
+.btn-h.btn-block {
+	text-align: center;
+}
+.btn-h.btn-brd.btn-u-light {
+	color: #fff;
+	border-color: #fff;
+}
+.btn-h.btn-brd.btn-u-light:hover {
+	border-color: #fff;
+}
+.btn-h.btn-brd.btn-u-light.btn-brd-hover:hover {
+ background: #fff;
+ color: #555 !important;
+}
+
+.rounded-4x { border-radius: 20px !important;}
+.margin-right-10 { margin-right: 10px;}
+/*Page intro Buttons end
+------------------------------------*/
+.list-inline {
+  color: #fff;
+  font-size:25px;
+}
+.list-inline i{
+
+  color: #fff;
+}
 .center{
   text-align: center;
 }
-footer{
-  background:#e7e7e7;
-  width: 100%;
-  padding: 5px;
-}
+
 .log-in-btn{
   background-color: #ecf0f1;
  }

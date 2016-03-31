@@ -4,12 +4,12 @@
   <div class="reg-block-header">
       <h2>Sign In</h2>
             <ul class="social-icons text-center">
-                <li><a href="#"><i class="fa fa-facebook-square fa-2x"></i></a></li>
-                <li><a  href="#"><i class="fa fa-twitter-square fa-2x"></i></a></li>
-                <li><a  href="#"><i class="fa fa-google-plus-square fa-2x"></i></a></li>
-                <li><a  href="#"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook-square fa-2x facebook"></i></a></li>
+                <li><a  href="#"><i class="fa fa-twitter-square fa-2x twitter" ></i></a></li>
+                <li><a  href="#"><i class="fa fa-google-plus-square fa-2x google_plus "></i></a></li>
+                <li><a  href="#"><i class="fa fa-linkedin-square fa-2x linkedin"></i></a></li>
             </ul>
-            <p>Don't Have Account? Click <%= link_to "Sign up", new_registration_path(resource_name) %> to registration. </p>
+            <p>Don't Have Account? Click  <%= link_to " Sign up ", new_registration_path(resource_name), class:"links" %>  to registration. </p>
         </div>
 
 
@@ -43,6 +43,5 @@
          <p>no worries, <%= link_to "Click here", new_password_path(resource_name) %> to reset your password.</p>
 
     <% end %>
-  </div>
-
+</div>
   <!--End Reg Block-->

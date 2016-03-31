@@ -1,15 +1,32 @@
 <%if user_signed_in?%>
+  <%= render 'home/banner' %>
 <%else%>
 <!-- Image Gradient -->
   <div class="interactive-slider-v2">
-      <div class="container">
-          <h3>Welcome To The Pinterested App!</h3>
+      <div class="container page-intro">
+          <h3>Welcome To Pi<span class="pixils-main">x</span>ils!</h3>
           <p>Pinterest clone app!</p>
           <br>
-          <%= link_to "Sign in", new_user_session_path , class:" btn-lg btn btn-default " %>
-          <%= link_to "Join", new_user_registration_path , class:"btn-lg btn btn-primary" %>
+          <%= link_to "Start uploading", new_user_session_path , class:" btn-h btn-brd btn-brd-width-2 btn-brd-hover btn-u-light rounded-4x margin-right-10 " %>
+          <%= link_to "Join us now", new_user_registration_path , class:"btn-h btn-brd btn-brd-width-2 btn-brd-hover btn-u-light rounded-4x margin-right-10" %>
 
+          <div class="section-socials">
+       	        <div class="section-social">
+       	          <div class="section-social-title">Like Us on Facebook</div>
+       	          <div class="section-social-button">
+       	            <div class="fb-like fb_iframe_widget" data-href="http://facebook.com/TheGudlifeBusiness/ data-layout="button_count" data-action="like" data-show-faces="false" data-share="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=1972702999621713&amp;container_width=123&amp;href=http%3A%2F%2Ffacebook.com%2FTheGudlifeBusiness&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;share=false&amp;show_faces=false"><span style="vertical-align: bottom; width: 81px; height: 20px;"><iframe name="f31beee3381bac8" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="http://www.facebook.com/v2.3/plugins/like.php?action=like&amp;app_id=1972702999621713&amp;channel=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D42%23cb%3Df2c954e72d430b4%26domain%3Dhtmlstream.com%26origin%3Dhttp%253A%252F%252Fhtmlstream.com%252Ff1720da9ee6542%26relation%3Dparent.parent&amp;container_width=123&amp;href=http%3A%2F%2Ffacebook.com%2Fhtmlstream&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;share=false&amp;show_faces=false" style="border: none; visibility: visible; width: 81px; height: 20px;" class=""></iframe></span></div>
+       	          </div>
+       	        </div>
+       	        <div class="section-social">
+       	          <div class="section-social-title">Follow Us on Twitter</div>
+       	          <div class="section-social-button">
+       	            <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-follow-button twitter-follow-button-rendered" title="Twitter Follow Button" src="http://platform.twitter.com/widgets/follow_button.64a917b4a230f163048902c783e1530f.en.html#dnt=false&amp;id=twitter-widget-0&amp;lang=en&amp;screen_name=felender7&amp;show_count=false&amp;show_screen_name=true&amp;size=m&amp;time=1459432501618" style="position: static; visibility: visible; width: 130px; height: 20px;" data-screen-name="Beans"></iframe>
+       	          </div>
+       	        </div>
+       	      </div>
+              <br>
       </div>
+      <br>
   </div>
   <!-- End Image Gradient -->
 <%end%>

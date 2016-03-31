@@ -4,7 +4,7 @@ class PinsController < ApplicationController
   before_action :correct_user, only: [:edit, :update, :destroy]
   before_action :current_user_pins, only:[:show]
   def index
-    @pins = Pin.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 4)
+    @pins = Pin.all.order("created_at DESC").paginate(:page => params[:page], :per_page =>20)
     #<%=will_paginate @pins, renderer: BoostrapPagination::Rails%>
   end
 
@@ -52,7 +52,7 @@ class PinsController < ApplicationController
 end
     def correct_user # check if the user is authorised to edit,update or destroy the pin
       @pin = current_user.pins.find_by(id: params[:id])
-          redirect_t pins_path, notice: "Not authorised to edit this pin" if @pin.nil?
+          redirect_to pins_path, notice: "Not authorised to edit this pin" if @pin.nil?
     end
 def current_user_pins
     if user_signed_in?
