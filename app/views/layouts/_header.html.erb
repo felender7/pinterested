@@ -22,7 +22,7 @@
           <%end%>
         </li>
       </ul>
-      <form class="navbar-form navbar-left" role="search">
+      <form class="navbar-form navbar-right" role="search">
           <div class="input-group">
           <input type="text" class="form-control" placeholder="Search for...">
           <span class="input-group-btn">
@@ -33,7 +33,7 @@
 
       <ul class="nav navbar-nav navbar-right">
         <%if user_signed_in?%>
-          <li class="avator round-image-50 "><%=image_tag(current_user.avatar.url(:thumb)) %></li>
+          <li style="margin-top: 9px; margin-right: -10px;" class="avator round-image-50 "><%=image_tag(current_user.avatar.url(:thumb)) %></li>
           <li><%=link_to (current_user.name)%></li>
           <li><%=link_to 'Logout',  destroy_user_session_path, method: :delete %> </li>
         <%else%>

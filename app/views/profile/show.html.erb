@@ -1,0 +1,6 @@
+
+
+   <%@user_pins.each do |user_pin| %>
+     <%=image_tag(user_pin.image.url(:medium)) %><br>
+     <%=user_pin.description%>
+  <%end%>

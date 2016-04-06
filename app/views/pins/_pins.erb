@@ -20,7 +20,7 @@
               <div class="avator-thumbs">
                   <ul class="nav navbar-nav" style="margin-top: 4px;">
                     <li class="thumnail round-image-20 "><%=image_tag(pin.user.avatar.url(:thumb)) if pin.user %></li>
-                    <li style="margin-top: 3px; margin-left: 4px;"><small><%=pin.user.name if pin.user%></small></li>
+                    <li style="margin-top: 3px; margin-left: 4px;"><small><%=link_to pin.user.name, "#"  if pin.user%></small></li>
                 </ul>
               </div>
               <br>
